@@ -1,0 +1,3 @@
+logging:
+  level:
+    team722: 'INFO'
