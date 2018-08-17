@@ -1,4 +1,4 @@
-package team722;
+package ru.waveaccess.tver.activity.model;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
