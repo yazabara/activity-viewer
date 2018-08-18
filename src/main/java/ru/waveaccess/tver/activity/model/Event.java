@@ -1,6 +1,8 @@
 package ru.waveaccess.tver.activity.model;
 
+import ru.waveaccess.tver.activity.model.condition.Condition;
 import ru.waveaccess.tver.activity.model.invitation.InvitePolicy;
+import ru.waveaccess.tver.activity.model.photo.Album;
 import ru.waveaccess.tver.activity.model.pricing.CostGroup;
 import ru.waveaccess.tver.activity.model.pricing.Debt;
 import ru.waveaccess.tver.activity.model.pricing.PricingModel;
@@ -12,6 +14,7 @@ import ru.waveaccess.tver.activity.model.voting.Voting;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.List;
 
 @Entity
 public class Event {
@@ -20,40 +23,34 @@ public class Event {
     private Long id;
 
     private String title;
+    private Interest activityType;
+    private List<String> tags;
 
     private ActivityUser author;
 
-    private Boolean confirmed;
-    private String specialConditionToBeMet;
-    private Integer minParticipantsCount;
+    private List<Responsible> responsibles;
+    private List<ActivityUser> participants;
+    private List<ActivityUser> possibleParticipants;
+
+    private List<Condition> conditionsToBeMet;
 
     private Boolean privateEvent;
     private InvitePolicy invitePolicy;
 
     private String htmlDescription;
+    private Album descriptionImages;
+    private List<Voting> votings;
 
     private String place;
     private String equipmentDescription;
-
-    private Interest activityType;
-    private String[] tags;
 
     private TimeMarkModel timeMarkModel;
 
     private Double totalCostAmount;
     private CostGroup[] costByСonstituent;
     private PricingModel pricingModel;
-    private Debt[] debts;
-
-    private Responsible[] responsibles;
-
-    private ActivityUser[] participants;
-
-    private ActivityUser[] possibleParticipants;
+    private List<Debt> debts;
 
     private String externalLink;
-
-    private String[] images;
-    private Voting[] votings;
-    private String photoAlbumFolderName;
+    private List<Album> photoReport;
 }
