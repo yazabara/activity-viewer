@@ -1,5 +1,7 @@
 package ru.waveaccess.tver.activity.model;
 
+import ru.waveaccess.tver.activity.model.invitation.InvitePolicy;
+import ru.waveaccess.tver.activity.model.pricing.CostGroup;
 import ru.waveaccess.tver.activity.model.pricing.Debt;
 import ru.waveaccess.tver.activity.model.pricing.PricingModel;
 import ru.waveaccess.tver.activity.model.timemark.TimeMarkModel;
@@ -22,17 +24,24 @@ public class Event {
     private ActivityUser author;
 
     private Boolean confirmed;
+    private String specialConditionToBeMet;
+    private Integer minParticipantsCount;
+
+    private Boolean privateEvent;
+    private InvitePolicy invitePolicy;
 
     private String htmlDescription;
 
     private String place;
     private String equipmentDescription;
 
-    private Interest[] activityType;
+    private Interest activityType;
     private String[] tags;
 
     private TimeMarkModel timeMarkModel;
 
+    private Double totalCostAmount;
+    private CostGroup[] costByСonstituent;
     private PricingModel pricingModel;
     private Debt[] debts;
 
@@ -45,7 +54,6 @@ public class Event {
     private String externalLink;
 
     private String[] images;
-
     private Voting[] votings;
-
+    private String photoAlbumFolderName;
 }

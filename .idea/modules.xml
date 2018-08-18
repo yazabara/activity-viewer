@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/activity-viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/activity-viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/activity-viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/activity-viewer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/activity-viewer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/activity-viewer_main.iml" group="activity-viewer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/activity-viewer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/activity-viewer_main.iml" group="activity-viewer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/activity-viewer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/activity-viewer_test.iml" group="activity-viewer" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/activity-viewer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/activity-viewer_test.iml" group="activity-viewer" />
     </modules>
   </component>
