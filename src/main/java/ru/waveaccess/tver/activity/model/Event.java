@@ -42,8 +42,11 @@ public class Event {
     private List<Voting> votings;
 
     private String place;
+    private String rootExternalLink;
+    private String meetingPlace;
     private String equipmentDescription;
 
+    private Boolean isDateApproximate;
     private TimeMarkModel timeMarkModel;
 
     private Double totalCostAmount;
