@@ -4,8 +4,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import ru.waveaccess.tver.activity.model.users.ActivityUser;
 import ru.waveaccess.tver.activity.model.pricing.PricingModel;
+import ru.waveaccess.tver.activity.model.users.ActivityUser;
 
 import javax.persistence.Column;
 import javax.persistence.FetchType;

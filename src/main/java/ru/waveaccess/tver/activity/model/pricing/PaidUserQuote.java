@@ -1,9 +1,5 @@
-package ru.waveaccess.tver.activity.model.event;
+package ru.waveaccess.tver.activity.model.pricing;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
 import ru.waveaccess.tver.activity.model.users.ActivityUser;
 
 import javax.persistence.Access;
@@ -18,15 +14,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-@Data
-@EqualsAndHashCode
-@ToString
-@NoArgsConstructor
-
 @Entity
+@Table(name = "PaidUserQuote")
 @Access(AccessType.FIELD)
-@Table(name = "Subscriptions")
-public class Subscription {
+public class PaidUserQuote {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,15 +30,16 @@ public class Subscription {
     @JoinColumn(name = "userId")
     private ActivityUser user;
 
-    @Column(name = "interestId")
-    private Long interestId;
+    @Column(name = "pricingModelId")
+    private Long pricingModelId;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "interestId")
-    private Interest interest;
+    @JoinColumn(name = "pricingModelId")
+    private PricingModel pricingModel;
 
-    @Column(name = "tagId")
-    private Long tagId;
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "tagId")
-    private Tag tag;
+    @Column(name = "assignedQuoteAbsolute")
+    private Double assignedQuoteAbsolute;
+
+    @Column(name = "assignedQuotePercent")
+    private Double assignedQuotePercent;
+
 }
