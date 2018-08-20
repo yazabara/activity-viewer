@@ -1,9 +1,11 @@
-package ru.waveaccess.tver.activity.model.event;
+package ru.waveaccess.tver.activity.model.users;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import ru.waveaccess.tver.activity.model.event.Interest;
+import ru.waveaccess.tver.activity.model.event.Tag;
 import ru.waveaccess.tver.activity.model.users.ActivityUser;
 
 import javax.persistence.Access;
