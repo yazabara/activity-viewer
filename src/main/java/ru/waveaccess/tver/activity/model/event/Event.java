@@ -74,7 +74,7 @@ public class Event {
     @JoinTable(name = "Events_NonFinalParticipants", joinColumns = { @JoinColumn(name = "eventId") }, inverseJoinColumns = { @JoinColumn(name = "userId") })
     private List<ActivityUser> possibleParticipants;
 
-    @OneToMany(mappedBy = "condition", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Condition> conditionsToBeMet;
 
     @Column(name = "isPrivate")

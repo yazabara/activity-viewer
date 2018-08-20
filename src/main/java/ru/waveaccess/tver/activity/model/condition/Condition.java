@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import ru.waveaccess.tver.activity.model.event.Event;
 
 import javax.persistence.Access;
 import javax.persistence.AccessType;
@@ -37,6 +38,12 @@ public class Condition {
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "eventId")
+    private Long eventId;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "eventId")
+    private Event event;
+
     @Column(name = "isMet")
     private Boolean isMet;
 
@@ -45,4 +52,5 @@ public class Condition {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "parentId")
     private Condition parent;
+
 }
