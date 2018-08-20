@@ -1,7 +1,7 @@
 package ru.waveaccess.tver.activity.model.invitation;
 
 import org.apache.catalina.User;
-import ru.waveaccess.tver.activity.model.Event;
+import ru.waveaccess.tver.activity.model.event.Event;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

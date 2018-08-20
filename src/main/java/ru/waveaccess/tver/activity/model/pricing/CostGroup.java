@@ -1,6 +1,6 @@
 package ru.waveaccess.tver.activity.model.pricing;
 
-import ru.waveaccess.tver.activity.model.Event;
+import ru.waveaccess.tver.activity.model.event.Event;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

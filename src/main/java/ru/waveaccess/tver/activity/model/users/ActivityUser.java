@@ -1,5 +1,7 @@
 package ru.waveaccess.tver.activity.model.users;
 
+import ru.waveaccess.tver.activity.model.event.Interest;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.sql.Date;
