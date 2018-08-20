@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import ru.waveaccess.tver.activity.model.chat.ActivityChat;
 import ru.waveaccess.tver.activity.model.condition.Condition;
 import ru.waveaccess.tver.activity.model.invitation.InvitePolicy;
 import ru.waveaccess.tver.activity.model.photo.Album;
@@ -87,6 +88,8 @@ public class Event {
     private Album descriptionImages;
     @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Voting> votings;
+    @OneToOne(mappedBy = "event", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private ActivityChat chat;
 
     @Column(name = "location")
     private String location;
