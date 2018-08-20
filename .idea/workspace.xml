@@ -54,18 +54,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ChatMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/chat/ChatMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InvitePolicy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/InvitePolicy.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,23 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Condition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/condition/Condition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="45" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Invitation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/Invitation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="37" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="16" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,11 +75,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StrictInvitePolicy.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StrictInvitePolicy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/models/StrictInvitePolicy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <caret line="22" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Album.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Album.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="771">
+              <caret line="46" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Photo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="30" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="40" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Comment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="24" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="39" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rate.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Rate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -137,30 +158,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" lean-forward="true" selection-start-line="15" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultInvitePolicy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/models/DefaultInvitePolicy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeadQuarterApproved.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/condition/models/HeadQuarterApproved.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="8" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -620,10 +617,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/Interest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/TimeMarkModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/timemark/RegularWithExceptions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/timemark/TimeMarkModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/timemark/Combined.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/timemark/FixedDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/timemark/FixedDateTime.java" />
@@ -671,6 +664,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/models/GroupInvitePolicy.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/models/PublicPolicy.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/models/StrictInvitePolicy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Album.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Photo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Rate.java" />
       </list>
     </option>
   </component>
@@ -916,12 +913,12 @@
       <updated>1534516590120</updated>
       <workItem from="1534516591608" duration="4062000" />
       <workItem from="1534757623246" duration="1838000" />
-      <workItem from="1534759478711" duration="5307000" />
+      <workItem from="1534759478711" duration="5857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11207000" />
+    <option name="totallyTimeSpent" value="11757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -969,43 +966,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/voting/Option.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/voting/UserChoise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/users/Responsible.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/Application.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/pricing.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/users/Group.java">
@@ -1371,8 +1331,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/Invitation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="37" />
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="16" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1382,7 +1342,44 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/invitation/models/StrictInvitePolicy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <caret line="22" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="46" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Photo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="30" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="39" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/waveaccess/tver/activity/model/photo/Rate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
