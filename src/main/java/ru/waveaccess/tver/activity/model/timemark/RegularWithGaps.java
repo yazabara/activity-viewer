@@ -1,12 +1,21 @@
 package ru.waveaccess.tver.activity.model.timemark;
 
-import javax.persistence.Id;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import javax.persistence.CascadeType;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import java.util.List;
 
+@Data
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
+@NoArgsConstructor
 public class RegularWithGaps extends TimeMarkModel {
 
-    @Id
-    private Long id;
-
+    @OneToMany(mappedBy = "timeModel", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Gap> gaps;
 }
