@@ -25,7 +25,7 @@ public class PricingModel {
     @Column(name = "id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "eventId")
     private Event event;
 }

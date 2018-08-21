@@ -14,11 +14,11 @@ public class Invitation {
     @Column(name = "id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "userId")
     private ActivityUser user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "invitePolicyId")
     private InvitePolicy invitePolicy;
 }

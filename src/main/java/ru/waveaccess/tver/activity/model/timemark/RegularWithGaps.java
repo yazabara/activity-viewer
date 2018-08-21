@@ -6,8 +6,10 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
+import java.sql.Date;
 import java.util.List;
 
 @Data
@@ -16,6 +18,12 @@ import java.util.List;
 @NoArgsConstructor
 public class RegularWithGaps extends TimeMarkModel {
 
-    @OneToMany(mappedBy = "timeModel", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "timeModel", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Gap> gaps;
+
+    @Column(name = "from")
+    private Date from;
+
+    @Column(name = "till")
+    private Date till;
 }

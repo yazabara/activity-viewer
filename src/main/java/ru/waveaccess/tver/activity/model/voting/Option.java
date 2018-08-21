@@ -22,7 +22,7 @@ public class Option {
     @Column(name = "id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "votingId")
     private Voting voting;
 

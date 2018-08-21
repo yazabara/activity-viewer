@@ -23,7 +23,7 @@ public class Gap {
     @Column(name = "id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "timeModelId")
     private TimeMarkModel timeModel;
 

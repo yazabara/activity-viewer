@@ -25,14 +25,14 @@ public class Condition {
     @Column(name = "id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "eventId")
     private Event event;
 
     @Column(name = "isMet")
     private Boolean isMet;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "parentId")
     private Condition parent;
 
