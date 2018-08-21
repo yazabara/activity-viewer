@@ -1,0 +1,28 @@
+dbSchema: activity
+
+logging:
+  level:
+    ru.waveaccess.tver.activity: 'INFO'
+
+spring:
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog.xml
+    parameters:
+      dbSchema: ${dbSchema}
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: h2
+    properties:
+      hibernate.default_schema: ${dbSchema}
+      hibernate.enable_lazy_load_no_trans: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    url: jdbc:h2:~/test;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS ${dbSchema};

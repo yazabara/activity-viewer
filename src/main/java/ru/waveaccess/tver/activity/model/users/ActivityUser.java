@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import ru.waveaccess.tver.activity.model.event.Event;
 import ru.waveaccess.tver.activity.model.event.Interest;
 
 import javax.persistence.*;
