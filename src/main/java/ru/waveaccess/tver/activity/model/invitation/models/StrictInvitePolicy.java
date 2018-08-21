@@ -19,6 +19,6 @@ import java.util.List;
 @NoArgsConstructor
 public class StrictInvitePolicy extends InvitePolicy {
 
-    @OneToMany(mappedBy = "invitePolicy", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "invitePolicy", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Invitation> invitations;
 }

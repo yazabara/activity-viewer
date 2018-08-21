@@ -16,6 +16,6 @@ import java.util.List;
 @NoArgsConstructor
 public class RegularWithGaps extends TimeMarkModel {
 
-    @OneToMany(mappedBy = "timeModel", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "timeModel", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Gap> gaps;
 }

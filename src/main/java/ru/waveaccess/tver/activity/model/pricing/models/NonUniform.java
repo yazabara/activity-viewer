@@ -18,6 +18,6 @@ import java.util.List;
 @NoArgsConstructor
 public class NonUniform extends PricingModel {
 
-    @OneToMany(mappedBy = "pricingModel", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "pricingModel", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<PaidUserQuote> participantsQuotes;
 }

@@ -18,6 +18,6 @@ import java.util.List;
 //OR operator for conditions, for example "3 of possible places check, any is acceptable"
 public class AnyOfConditionBlock extends Condition {
 
-    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Condition> conditions;
 }

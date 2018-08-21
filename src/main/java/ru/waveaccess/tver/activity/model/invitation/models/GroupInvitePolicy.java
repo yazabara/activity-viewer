@@ -19,7 +19,7 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 public class GroupInvitePolicy extends InvitePolicy {
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "groupId")
     private Group group;
 }
