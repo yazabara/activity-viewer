@@ -4,6 +4,7 @@
 *.ids
 *.orig
 /.idea/
+.idea/
 /.gradle/
 /build
 /out
