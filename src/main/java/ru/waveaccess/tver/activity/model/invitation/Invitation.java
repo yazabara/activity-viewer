@@ -1,6 +1,6 @@
 package ru.waveaccess.tver.activity.model.invitation;
 
-import org.apache.catalina.User;
+import ru.waveaccess.tver.activity.model.users.ActivityUser;
 
 import javax.persistence.*;
 
@@ -14,14 +14,10 @@ public class Invitation {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "userId")
-    private Long userId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
-    private User user;
+    private ActivityUser user;
 
-    @Column(name = "invitePolicyId")
-    private Long invitePolicyId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "invitePolicyId")
     private InvitePolicy invitePolicy;

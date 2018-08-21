@@ -25,8 +25,6 @@ public class Condition {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "eventId")
-    private Long eventId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "eventId")
     private Event event;
@@ -34,8 +32,6 @@ public class Condition {
     @Column(name = "isMet")
     private Boolean isMet;
 
-    @Column(name = "parentId")
-    private Long parentId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "parentId")
     private Condition parent;

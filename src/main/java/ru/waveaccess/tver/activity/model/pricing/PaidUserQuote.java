@@ -14,14 +14,10 @@ public class PaidUserQuote {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "userId")
-    private Long userId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
     private ActivityUser user;
 
-    @Column(name = "pricingModelId")
-    private Long pricingModelId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "pricingModelId")
     private PricingModel pricingModel;

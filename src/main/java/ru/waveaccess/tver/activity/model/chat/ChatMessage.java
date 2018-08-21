@@ -24,14 +24,10 @@ public class ChatMessage {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "chatId")
-    private Long chatId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "chatId")
     private ActivityChat chat;
 
-    @Column(name = "userId")
-    private Long userId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
     private ActivityUser user;

@@ -19,8 +19,6 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 public class GroupInvitePolicy extends InvitePolicy {
 
-    @Column(name = "groupId")
-    private Long groupId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "groupId")
     private Group group;

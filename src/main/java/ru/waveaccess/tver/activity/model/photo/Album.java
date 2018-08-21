@@ -16,14 +16,10 @@ public class Album {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "eventId")
-    private Long eventId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "eventId")
     private Event event;
 
-    @Column(name = "ownerId")
-    private Long ownerId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "ownerId")
     private ActivityUser owner;

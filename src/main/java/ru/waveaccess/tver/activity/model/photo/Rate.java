@@ -14,8 +14,6 @@ public class Rate {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "userId")
-    private Long userId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
     private ActivityUser user;
@@ -23,8 +21,6 @@ public class Rate {
     @Column(name = "value")
     private Long value;
 
-    @Column(name = "photoId")
-    private Long photoId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "photoId")
     private Photo photo;

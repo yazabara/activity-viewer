@@ -13,6 +13,7 @@ import ru.waveaccess.tver.activity.model.pricing.Debt;
 import ru.waveaccess.tver.activity.model.pricing.PricingModel;
 import ru.waveaccess.tver.activity.model.timemark.TimeMarkModel;
 import ru.waveaccess.tver.activity.model.users.ActivityUser;
+import ru.waveaccess.tver.activity.model.users.Responsible;
 import ru.waveaccess.tver.activity.model.voting.Voting;
 
 import javax.persistence.*;
@@ -33,8 +34,6 @@ public class Event {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "authorId")
-    private Long authorId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "authorId")
     private ActivityUser author;
@@ -49,7 +48,7 @@ public class Event {
     private List<Tag> tags;
 
     @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private List<ActivityUser> responsibles;
+    private List<Responsible> responsibles;
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(name = "Events_FinalParticipants", joinColumns = {@JoinColumn(name = "eventId")}, inverseJoinColumns = {@JoinColumn(name = "userId")})
     private List<ActivityUser> participants;

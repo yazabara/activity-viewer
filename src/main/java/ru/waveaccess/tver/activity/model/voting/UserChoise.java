@@ -24,14 +24,10 @@ public class UserChoise {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "userId")
-    private Long userId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
     private ActivityUser user;
 
-    @Column(name = "optionId")
-    private Long optionId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "optionId")
     private Option option;

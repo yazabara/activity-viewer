@@ -24,20 +24,14 @@ public class Subscription {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "userId")
-    private Long userId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
     private ActivityUser user;
 
-    @Column(name = "interestId")
-    private Long interestId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "interestId")
     private Interest interest;
 
-    @Column(name = "tagId")
-    private Long tagId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "tagId")
     private Tag tag;

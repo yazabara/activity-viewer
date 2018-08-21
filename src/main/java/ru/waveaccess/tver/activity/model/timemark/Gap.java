@@ -23,11 +23,9 @@ public class Gap {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "timeModelId")
-    private Long timeModelId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "timeModelId")
-    private RegularWithGaps timeModel;
+    private TimeMarkModel timeModel;
 
     @Column(name = "gapDate")
     private Date gapDate;

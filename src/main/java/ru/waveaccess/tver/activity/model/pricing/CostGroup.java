@@ -23,8 +23,6 @@ public class CostGroup {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "eventId")
-    private Long eventId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "eventId")
     private Event event;

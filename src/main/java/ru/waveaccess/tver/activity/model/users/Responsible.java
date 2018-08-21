@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import ru.waveaccess.tver.activity.model.event.Event;
 
 import javax.persistence.*;
 
@@ -22,8 +23,10 @@ public class Responsible {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "userId")
-    private Long userId;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "eventId")
+    private Event event;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
     private ActivityUser user;

@@ -24,8 +24,6 @@ public class ActivityChat {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "eventId")
-    private Long eventId;
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "eventId")
     private Event event;

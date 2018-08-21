@@ -22,8 +22,6 @@ public class Option {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "votingId")
-    private Long votingId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "votingId")
     private Voting voting;

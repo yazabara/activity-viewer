@@ -16,8 +16,6 @@ public class Photo {
     @Column(name = "fileName")
     private String fileName;
 
-    @Column(name = "albumId")
-    private Long albumId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "albumId")
     private Album album;

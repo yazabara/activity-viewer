@@ -18,8 +18,6 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 public class SingleParticipantPaid extends PricingModel {
 
-    @Column(name = "paidUserId")
-    private Long paidUserId;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "paidUserId")
     private ActivityUser paidUser;
