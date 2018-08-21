@@ -1,3 +1,6 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
 buildscript {
     repositories {
         mavenCentral()
@@ -12,6 +15,6 @@ repositories {
 
 dependencies {
     compile project(':backend')
-    include ('frontend/dist')
+//    include ('frontend/dist')
 }
 
