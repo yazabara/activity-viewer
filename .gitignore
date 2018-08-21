@@ -3,8 +3,7 @@
 *.ipr
 *.ids
 *.orig
-/.idea/
 .idea/
-/.gradle/
-/build
-/out
+.gradle/
+build/
+out/
