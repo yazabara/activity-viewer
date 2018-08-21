@@ -1,0 +1,12 @@
+{
+  "name": "activity-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yazabara/activity-viewer.git"
+  },
+  "devDependencies": {
+    "gulp-rev": "^3.9.0"
+  }
+}
