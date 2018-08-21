@@ -11,7 +11,7 @@ import java.sql.Timestamp;
 
 @Data
 @EqualsAndHashCode
-@ToString
+@ToString(exclude = "chat")
 @NoArgsConstructor
 
 @Entity

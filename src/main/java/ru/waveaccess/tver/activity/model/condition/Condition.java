@@ -10,7 +10,7 @@ import javax.persistence.*;
 
 @Data
 @EqualsAndHashCode
-@ToString
+@ToString(exclude = "event")
 @NoArgsConstructor
 
 @Entity
