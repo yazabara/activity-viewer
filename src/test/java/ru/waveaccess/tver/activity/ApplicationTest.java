@@ -1,4 +1,4 @@
-package ru.waveaccess.tver.activity.model;
+package ru.waveaccess.tver.activity;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,5 +12,4 @@ public class ApplicationTest {
     @Test
     public void contextLoads() {
     }
-
 }
