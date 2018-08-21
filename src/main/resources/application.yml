@@ -2,7 +2,7 @@ dbSchema: activity
 
 logging:
   level:
-    team722: 'INFO'
+    ru.waveaccess.tver.activity: 'INFO'
 
 spring:
   liquibase:
