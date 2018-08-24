@@ -1,4 +1,4 @@
-package ru.waveaccess.tver.activity.exceptions;
+package ru.waveaccess.tver.activity.exception;
 
 public class GroupDataException extends RuntimeException {
 	public GroupDataException(String message) {

@@ -3,9 +3,9 @@ package ru.waveaccess.tver.activity.controllers.handlers;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import ru.waveaccess.tver.activity.exceptions.ActivityUserDataException;
-import ru.waveaccess.tver.activity.exceptions.GroupDataException;
-import ru.waveaccess.tver.activity.exceptions.InterestDataException;
+import ru.waveaccess.tver.activity.exception.ActivityUserDataException;
+import ru.waveaccess.tver.activity.exception.GroupDataException;
+import ru.waveaccess.tver.activity.exception.InterestDataException;
 
 @ControllerAdvice
 public class ControllersExceptionsHandler {
