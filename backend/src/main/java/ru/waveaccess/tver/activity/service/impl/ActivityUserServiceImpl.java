@@ -13,30 +13,30 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ActivityUserServiceImpl implements ActivityUsersService {
 
-	private final UserRepository userRepository;
+    private final UserRepository userRepository;
 
-	@Override
-	public List<ActivityUser> getAll() {
-		return (List<ActivityUser>) userRepository.findAll();
-	}
+    @Override
+    public List<ActivityUser> getAll() {
+        return (List<ActivityUser>) userRepository.findAll();
+    }
 
-	@Override
-	public ActivityUser getOne(Long userId) {
-		return userRepository.findById(userId).orElseThrow(() -> new ActivityUserDataException("User with id = " + userId + " not found"));
-	}
+    @Override
+    public ActivityUser getOne(Long userId) {
+        return userRepository.findById(userId).orElseThrow(() -> new ActivityUserDataException("User with id = " + userId + " not found"));
+    }
 
-	@Override
-	public void saveNew(ActivityUser activityUser) {
-		userRepository.save(activityUser);
-	}
+    @Override
+    public Long saveNew(ActivityUser activityUser) {
+        return userRepository.save(activityUser).getId();
+    }
 
-	@Override
-	public void update(ActivityUser activityUser) {
-		userRepository.save(activityUser);
-	}
+    @Override
+    public void update(ActivityUser activityUser) {
+        userRepository.save(activityUser);
+    }
 
-	@Override
-	public void delete(Long userId) {
-		userRepository.deleteById(userId);
-	}
+    @Override
+    public void delete(Long userId) {
+        userRepository.deleteById(userId);
+    }
 }

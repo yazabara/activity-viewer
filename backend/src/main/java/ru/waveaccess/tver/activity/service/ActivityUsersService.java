@@ -9,7 +9,7 @@ public interface ActivityUsersService {
 
 	ActivityUser getOne(Long userId);
 
-	void saveNew(ActivityUser activityUser);
+	Long saveNew(ActivityUser activityUser);
 
 	void update(ActivityUser activityUser);
 
