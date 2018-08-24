@@ -5,8 +5,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import ru.waveaccess.tver.activity.model.event.Event;
-import ru.waveaccess.tver.activity.model.users.ActivityUser;
+import ru.waveaccess.tver.activity.model.db.event.Event;
+import ru.waveaccess.tver.activity.model.db.users.ActivityUser;
 import ru.waveaccess.tver.activity.repository.EventRepository;
 import ru.waveaccess.tver.activity.repository.UserRepository;
 

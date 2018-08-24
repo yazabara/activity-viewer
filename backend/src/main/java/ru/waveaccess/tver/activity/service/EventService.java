@@ -1,6 +1,6 @@
 package ru.waveaccess.tver.activity.service;
 
-import ru.waveaccess.tver.activity.model.event.Event;
+import ru.waveaccess.tver.activity.model.db.event.Event;
 
 public interface EventService {
 

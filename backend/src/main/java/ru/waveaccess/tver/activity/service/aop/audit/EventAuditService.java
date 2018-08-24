@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Service;
-import ru.waveaccess.tver.activity.model.event.Event;
+import ru.waveaccess.tver.activity.model.db.event.Event;
 
 @Service
 @Aspect

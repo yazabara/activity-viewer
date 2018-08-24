@@ -1,6 +1,6 @@
 package ru.waveaccess.tver.activity.service;
 
-import ru.waveaccess.tver.activity.model.users.ActivityUser;
+import ru.waveaccess.tver.activity.model.db.users.ActivityUser;
 
 import java.util.List;
 

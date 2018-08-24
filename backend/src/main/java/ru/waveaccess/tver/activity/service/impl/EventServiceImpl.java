@@ -2,7 +2,7 @@ package ru.waveaccess.tver.activity.service.impl;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.waveaccess.tver.activity.model.event.Event;
+import ru.waveaccess.tver.activity.model.db.event.Event;
 import ru.waveaccess.tver.activity.repository.EventRepository;
 import ru.waveaccess.tver.activity.service.EventService;
 

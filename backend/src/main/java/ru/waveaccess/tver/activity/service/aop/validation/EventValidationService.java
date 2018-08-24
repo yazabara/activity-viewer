@@ -5,7 +5,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Service;
 import ru.waveaccess.tver.activity.exception.EventRuntimeException;
-import ru.waveaccess.tver.activity.model.event.Event;
+import ru.waveaccess.tver.activity.model.db.event.Event;
 
 @Aspect
 @Service

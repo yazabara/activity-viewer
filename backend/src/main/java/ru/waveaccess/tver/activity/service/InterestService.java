@@ -1,6 +1,6 @@
 package ru.waveaccess.tver.activity.service;
 
-import ru.waveaccess.tver.activity.model.event.Interest;
+import ru.waveaccess.tver.activity.model.db.event.Interest;
 
 import java.util.List;
 

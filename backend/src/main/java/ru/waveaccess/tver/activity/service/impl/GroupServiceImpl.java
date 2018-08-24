@@ -3,7 +3,7 @@ package ru.waveaccess.tver.activity.service.impl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.waveaccess.tver.activity.exception.GroupDataException;
-import ru.waveaccess.tver.activity.model.users.Group;
+import ru.waveaccess.tver.activity.model.db.users.Group;
 import ru.waveaccess.tver.activity.repository.GroupRepository;
 import ru.waveaccess.tver.activity.service.GroupService;
 

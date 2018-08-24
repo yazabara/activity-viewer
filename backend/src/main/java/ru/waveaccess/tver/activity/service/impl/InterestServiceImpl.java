@@ -3,7 +3,7 @@ package ru.waveaccess.tver.activity.service.impl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.waveaccess.tver.activity.exception.InterestDataException;
-import ru.waveaccess.tver.activity.model.event.Interest;
+import ru.waveaccess.tver.activity.model.db.event.Interest;
 import ru.waveaccess.tver.activity.repository.InterestRepository;
 import ru.waveaccess.tver.activity.service.InterestService;
 

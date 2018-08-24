@@ -7,10 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import ru.waveaccess.tver.activity.Application;
 import ru.waveaccess.tver.activity.exception.EventRuntimeException;
-import ru.waveaccess.tver.activity.model.event.Event;
-import ru.waveaccess.tver.activity.model.users.ActivityUser;
+import ru.waveaccess.tver.activity.model.db.event.Event;
+import ru.waveaccess.tver.activity.model.db.users.ActivityUser;
 import ru.waveaccess.tver.activity.repository.UserRepository;
-import ru.waveaccess.tver.activity.service.impl.EventServiceImpl;
 
 import static org.junit.Assert.assertEquals;
 
