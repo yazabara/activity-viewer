@@ -10,12 +10,13 @@ import ru.waveaccess.tver.activity.exception.EventRuntimeException;
 import ru.waveaccess.tver.activity.model.event.Event;
 import ru.waveaccess.tver.activity.model.users.ActivityUser;
 import ru.waveaccess.tver.activity.repository.UserRepository;
+import ru.waveaccess.tver.activity.service.impl.EventServiceImpl;
 
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = Application.class)
-public class EventServiceTest {
+public class EventServiceImplTest {
 
     @Autowired
     private UserRepository userRepository;

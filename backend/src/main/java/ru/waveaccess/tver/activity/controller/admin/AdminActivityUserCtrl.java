@@ -1,4 +1,4 @@
-package ru.waveaccess.tver.activity.controllers.admin;
+package ru.waveaccess.tver.activity.controller.admin;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
