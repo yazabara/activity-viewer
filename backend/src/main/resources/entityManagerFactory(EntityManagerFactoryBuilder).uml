@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Persistence</ID>
+  <OriginalElement>JavaeeElement:/c8dd09c2/entityManagerFactory/backend_main/jpa/JPA/PersistenceModel</OriginalElement>
+  <nodes>
+    <node x="334.84278846153916" y="0.0">Tag#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Tag.java</node>
+    <node x="20.5" y="1420.0">AbstractAuditable#jar://C:/Users/Yaroslav/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.9.RELEASE/30acb36f682367d93ed400b4324fe2559f0fcb/spring-data-jpa-2.0.9.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class</node>
+    <node x="912.9423076923076" y="553.0">Comment#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Comment.java</node>
+    <node x="648.0673076923078" y="145.0">Subscription#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Subscription.java</node>
+    <node x="0.0" y="1113.0">Invitation#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/invitation/Invitation.java</node>
+    <node x="50.94230769230762" y="821.0">InvitePolicy#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/invitation/InvitePolicy.java</node>
+    <node x="1440.6923076923076" y="676.0">Option#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/Option.java</node>
+    <node x="1547.9423076923076" y="821.0">TimeMarkModel#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/timemark/TimeMarkModel.java</node>
+    <node x="0.0" y="1319.0">AbstractPersistable#jar://C:/Users/Yaroslav/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.9.RELEASE/30acb36f682367d93ed400b4324fe2559f0fcb/spring-data-jpa-2.0.9.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class</node>
+    <node x="774.9423076923076" y="553.0">Rate#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Rate.java</node>
+    <node x="1854.3846153846152" y="810.0">UserChoise#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/UserChoise.java</node>
+    <node x="1696.9423076923076" y="821.0">PricingModel#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/PricingModel.java</node>
+    <node x="1633.7155626780623" y="1102.0">Gap#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/timemark/Gap.java</node>
+    <node x="699.6923076923078" y="0.0">Interest#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Interest.java</node>
+    <node x="152.0" y="1330.0">null#null</node>
+    <node x="516.9423076923076" y="799.0">CostGroup#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/CostGroup.java</node>
+    <node x="1411.9423076923076" y="810.0">Voting#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/Voting.java</node>
+    <node x="722.6923076923078" y="268.0">ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java</node>
+    <node x="210.94230769230762" y="687.0">ActivityChat#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/chat/ActivityChat.java</node>
+    <node x="1256.9423076923076" y="810.0">Condition#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/condition/Condition.java</node>
+    <node x="1792.2849477682812" y="1091.0">PaidUserQuote#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/PaidUserQuote.java</node>
+    <node x="839.0545464749437" y="112.07186408880085">Group#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Group.java</node>
+    <node x="169.94230769230762" y="553.0">ChatMessage#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/chat/ChatMessage.java</node>
+    <node x="1049.9423076923076" y="553.0">Responsible#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Responsible.java</node>
+    <node x="369.9423076923076" y="553.0">Debt#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/Debt.java</node>
+    <node x="756.4099477682812" y="1003.0">Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java</node>
+    <node x="830.6923076923076" y="676.0">Photo#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Photo.java</node>
+    <node x="769.9423076923076" y="810.0">Album#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Album.java</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="Responsible#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Responsible.java">
+      <point x="16.769230769230717" y="-135.5" />
+      <point x="882.1791785375119" y="933.0" />
+      <point x="1132.9423076923076" y="933.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="Interest#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Interest.java">
+      <point x="33.53846153846143" y="-135.5" />
+      <point x="898.9484093067426" y="943.0" />
+      <point x="1226.4423076923076" y="943.0" />
+      <point x="1226.4423076923076" y="98.0" />
+      <point x="828.8589743589746" y="98.0" />
+      <point x="51.66666666666674" y="36.5" />
+    </edge>
+    <edge source="Album#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Album.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="-40.0" y="-36.5" />
+      <point x="809.9423076923076" y="774.0" />
+      <point x="764.4423076923076" y="774.0" />
+      <point x="764.4423076923076" y="533.0" />
+      <point x="791.5423076923078" y="533.0" />
+      <point x="-7.650000000000091" y="102.5" />
+    </edge>
+    <edge source="UserChoise#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/UserChoise.java" target="Option#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/Option.java">
+      <point x="-45.0" y="-36.5" />
+      <point x="1899.3846153846152" y="774.0" />
+      <point x="1528.4423076923076" y="774.0" />
+      <point x="29.25" y="36.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="Condition#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/condition/Condition.java">
+      <point x="50.30769230769238" y="-135.5" />
+      <point x="915.7176400759736" y="953.0" />
+      <point x="1358.1923076923076" y="953.0" />
+      <point x="33.75" y="36.5" />
+    </edge>
+    <edge source="PaidUserQuote#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/PaidUserQuote.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="57.75" y="-47.5" />
+      <point x="1965.5349477682812" y="983.0" />
+      <point x="2044.8846153846152" y="983.0" />
+      <point x="2044.8846153846152" y="493.0" />
+      <point x="868.042307692308" y="493.0" />
+      <point x="68.85000000000014" y="102.5" />
+    </edge>
+    <edge source="Condition#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/condition/Condition.java" target="Condition#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/condition/Condition.java">
+      <point x="-33.75" y="36.5" />
+      <point x="1290.6923076923076" y="903.0" />
+      <point x="1236.9423076923076" y="903.0" />
+      <point x="1236.9423076923076" y="846.5" />
+      <point x="-67.5" y="-0.0" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="Tag#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Tag.java">
+      <point x="-83.84615384615381" y="-135.5" />
+      <point x="781.5637939221274" y="973.0" />
+      <point x="159.44230769230762" y="973.0" />
+      <point x="159.44230769230762" y="98.0" />
+      <point x="362.59278846153916" y="98.0" />
+      <point x="-27.75" y="36.5" />
+    </edge>
+    <edge source="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java" target="Subscription#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Subscription.java">
+      <point x="-57.375" y="-102.5" />
+      <point x="741.8173076923078" y="243.0" />
+      <point x="697.0673076923078" y="243.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Group#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Group.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="31.0" y="47.5" />
+      <point x="880.6923076923078" y="243.0" />
+      <point x="856.5673076923078" y="243.0" />
+      <point x="57.375" y="-102.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="-33.53846153846166" y="-135.5" />
+      <point x="831.8714862298195" y="943.0" />
+      <point x="506.4423076923077" y="943.0" />
+      <point x="506.4423076923077" y="523.0" />
+      <point x="776.2423076923078" y="523.0" />
+      <point x="-22.950000000000045" y="102.5" />
+    </edge>
+    <edge source="Invitation#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/invitation/Invitation.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="-24.5" y="-25.5" />
+      <point x="24.5" y="983.0" />
+      <point x="38.13669278252655" y="983.0" />
+      <point x="38.13669278252655" y="493.0" />
+      <point x="730.3423076923079" y="493.0" />
+      <point x="-68.84999999999991" y="102.5" />
+    </edge>
+    <edge source="Gap#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/timemark/Gap.java" target="TimeMarkModel#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/timemark/TimeMarkModel.java">
+      <point x="0.0" y="-36.5" />
+      <point x="1701.2155626780623" y="973.0" />
+      <point x="1637.9423076923076" y="973.0" />
+      <point x="30.0" y="25.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="Album#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Album.java">
+      <point x="0.0" y="-135.5" />
+      <point x="865.4099477682812" y="923.0" />
+      <point x="849.9423076923076" y="923.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="TimeMarkModel#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/timemark/TimeMarkModel.java">
+      <point x="83.84615384615381" y="-135.5" />
+      <point x="949.256101614435" y="973.0" />
+      <point x="1577.9423076923076" y="973.0" />
+      <point x="-30.0" y="25.5" />
+    </edge>
+    <edge source="PaidUserQuote#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/PaidUserQuote.java" target="PricingModel#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/PricingModel.java">
+      <point x="-57.75" y="-47.5" />
+      <point x="1850.0349477682812" y="983.0" />
+      <point x="1774.1923076923076" y="983.0" />
+      <point x="25.75" y="25.5" />
+    </edge>
+    <edge source="Photo#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Photo.java" target="Rate#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Rate.java">
+      <point x="-36.0" y="-36.5" />
+      <point x="866.6923076923076" y="651.0" />
+      <point x="833.9423076923076" y="651.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="ActivityChat#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/chat/ActivityChat.java">
+      <point x="-67.0769230769231" y="-135.5" />
+      <point x="798.3330246913581" y="963.0" />
+      <point x="259.9423076923076" y="963.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Invitation#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/invitation/Invitation.java" target="InvitePolicy#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/invitation/InvitePolicy.java">
+      <point x="24.5" y="-25.5" />
+      <point x="73.5" y="983.0" />
+      <point x="75.44230769230762" y="983.0" />
+      <point x="-24.5" y="25.5" />
+    </edge>
+    <edge source="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java" target="Interest#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Interest.java">
+      <point x="-19.125" y="-102.5" />
+      <point x="780.0673076923078" y="243.0" />
+      <point x="777.1923076923078" y="243.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="Debt#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/Debt.java">
+      <point x="-50.30769230769238" y="-135.5" />
+      <point x="815.1022554605888" y="953.0" />
+      <point x="432.9423076923077" y="953.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Album#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Album.java" target="Photo#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Photo.java">
+      <point x="40.0" y="-36.5" />
+      <point x="889.9423076923076" y="774.0" />
+      <point x="902.6923076923076" y="774.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Rate#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Rate.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="1.1368683772161603E-13" y="-36.5" />
+      <point x="833.9423076923078" y="533.0" />
+      <point x="806.8423076923079" y="533.0" />
+      <point x="7.650000000000091" y="102.5" />
+    </edge>
+    <edge source="ChatMessage#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/chat/ChatMessage.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="0.0" y="-36.5" />
+      <point x="259.9423076923076" y="503.0" />
+      <point x="745.6423076923079" y="503.0" />
+      <point x="-53.549999999999955" y="102.5" />
+    </edge>
+    <edge source="Subscription#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Subscription.java" target="Tag#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Tag.java">
+      <point x="-24.5" y="-25.5" />
+      <point x="672.5673076923078" y="98.0" />
+      <point x="418.09278846153916" y="98.0" />
+      <point x="27.75" y="36.5" />
+    </edge>
+    <edge source="ActivityChat#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/chat/ActivityChat.java" target="ChatMessage#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/chat/ChatMessage.java">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Photo#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Photo.java" target="Comment#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Comment.java">
+      <point x="36.0" y="-36.5" />
+      <point x="938.6923076923076" y="651.0" />
+      <point x="971.4423076923076" y="651.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Voting#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/Voting.java" target="Option#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/Option.java">
+      <point x="0.0" y="-36.5" />
+      <point x="-29.25" y="36.5" />
+    </edge>
+    <edge source="Subscription#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Subscription.java" target="Interest#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Interest.java">
+      <point x="24.5" y="-25.5" />
+      <point x="721.5673076923078" y="98.0" />
+      <point x="725.5256410256411" y="98.0" />
+      <point x="-51.66666666666674" y="36.5" />
+    </edge>
+    <edge source="Comment#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/photo/Comment.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="0.0" y="-36.5" />
+      <point x="971.4423076923076" y="523.0" />
+      <point x="822.1423076923079" y="523.0" />
+      <point x="22.950000000000045" y="102.5" />
+    </edge>
+    <edge source="AbstractAuditable#jar://C:/Users/Yaroslav/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.9.RELEASE/30acb36f682367d93ed400b4324fe2559f0fcb/spring-data-jpa-2.0.9.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="AbstractPersistable#jar://C:/Users/Yaroslav/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.9.RELEASE/30acb36f682367d93ed400b4324fe2559f0fcb/spring-data-jpa-2.0.9.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class">
+      <point x="-46.0" y="-36.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="InvitePolicy#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/invitation/InvitePolicy.java">
+      <point x="-100.61538461538453" y="-135.5" />
+      <point x="764.7945631528967" y="983.0" />
+      <point x="124.44230769230762" y="983.0" />
+      <point x="24.5" y="25.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="Voting#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/Voting.java">
+      <point x="67.0769230769231" y="-135.5" />
+      <point x="932.4868708452043" y="963.0" />
+      <point x="1469.9423076923076" y="963.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Responsible#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Responsible.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="0.0" y="-36.5" />
+      <point x="1132.9423076923076" y="513.0" />
+      <point x="837.4423076923078" y="513.0" />
+      <point x="38.25" y="102.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="CostGroup#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/CostGroup.java">
+      <point x="-16.769230769230717" y="-135.5" />
+      <point x="848.6407169990505" y="933.0" />
+      <point x="633.4423076923076" y="933.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="Event#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/event/Event.java" target="PricingModel#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/PricingModel.java">
+      <point x="100.61538461538453" y="-135.5" />
+      <point x="966.0253323836657" y="983.0" />
+      <point x="1722.6923076923076" y="983.0" />
+      <point x="-25.75" y="25.5" />
+    </edge>
+    <edge source="AbstractAuditable#jar://C:/Users/Yaroslav/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.9.RELEASE/30acb36f682367d93ed400b4324fe2559f0fcb/spring-data-jpa-2.0.9.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="null#null">
+      <point x="46.0" y="-36.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java" target="Group#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Group.java">
+      <point x="19.125" y="-102.5" />
+      <point x="-31.0" y="47.5" />
+    </edge>
+    <edge source="Debt#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/pricing/Debt.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="0.0" y="-36.5" />
+      <point x="432.9423076923076" y="513.0" />
+      <point x="760.9423076923078" y="513.0" />
+      <point x="-38.25" y="102.5" />
+    </edge>
+    <edge source="UserChoise#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/voting/UserChoise.java" target="ActivityUser#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/ActivityUser.java">
+      <point x="45.0" y="-36.5" />
+      <point x="1989.3846153846152" y="503.0" />
+      <point x="852.7423076923078" y="503.0" />
+      <point x="53.549999999999955" y="102.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9150691463996181" x="1390.7719526812239" y="957.1882849549222" />
+  <SelectedNodes>
+    <node>Group#file://D:/repositories/activity-viewer/backend/src/main/java/ru/waveaccess/tver/activity/model/users/Group.java</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Embeddables</Category>
+    <Category>Superclasses</Category>
+  </Categories>
+</Diagram>
+

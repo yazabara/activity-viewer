@@ -29,6 +29,10 @@ public class Group {
     @Column(name = "title")
     private String title;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "ownerId")
+    private ActivityUser owner;
+
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "Users_Groups", joinColumns = {@JoinColumn(name = "groupId")}, inverseJoinColumns = {@JoinColumn(name = "userId")})
     private List<ActivityUser> users;
