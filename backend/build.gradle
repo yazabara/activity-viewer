@@ -5,9 +5,7 @@ buildscript {
     }
     repositories {
         mavenCentral()
-//        jcenter()
         maven { url "https://plugins.gradle.org/m2/" }
-//        maven { url 'http://repo.spring.io/plugins-release' }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -16,27 +14,29 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'com.github.ksoichiro.build.info'
 
 buildInfo {
-    committerDateFormat 'yyyy-MM-dd HH:mm:ss Z'
-    buildDateFormat 'yyyy-MM-dd HH:mm:ss Z'
-    manifestEnabled true
-    gitPropertiesEnabled true
-    gitInfoMode com.github.ksoichiro.build.info.BuildInfoExtension.MODE_DEFAULT
     warnIfGitDirectoryIsMissing false
 }
 
+sourceCompatibility = 1.8
+
+//TODO doesn't work. need to fix it.
 jar {
     manifest {
-        attributes("App-Version": project.version)
+        attributes(
+                'Built-By'       : System.properties['user.name'],
+                'Created-By'     : "Gradle ${gradle.gradleVersion}",
+                'Build-Jdk'      : "${System.properties['java.version']} (${System.properties['java.vendor']} ${System.properties['java.vm.version']})",
+                'Build-OS'       : "${System.properties['os.name']} ${System.properties['os.arch']} ${System.properties['os.version']}"
+        )
     }
 }
-
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
