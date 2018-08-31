@@ -1,4 +1,4 @@
-package ru.waveaccess.tver.activity.controller.handlers;
+package ru.waveaccess.tver.activity.controller.handler;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
