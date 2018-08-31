@@ -13,7 +13,7 @@ import java.io.Serializable;
 
 @Configuration
 @PropertySource(value = "classpath:version-info.properties", ignoreResourceNotFound = true)
-public class AppVersionConfiguration implements Serializable {
+public class AppVersionConfig implements Serializable {
 
     @Value("${version}")
     private String version;
