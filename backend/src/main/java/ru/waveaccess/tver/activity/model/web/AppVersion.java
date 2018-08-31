@@ -2,23 +2,16 @@ package ru.waveaccess.tver.activity.model.web;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.io.Serializable;
+import lombok.ToString;
 
 @Data
-public class AppVersion implements Serializable {
+@AllArgsConstructor
+@ToString
+public class AppVersion {
 
-    public static final String UNKNOWN = "unknown";
-
-    private String date = AppVersion.UNKNOWN;
-    private String version = AppVersion.UNKNOWN;
-    private GitInfo git = null;
-
-    @Data
-    @AllArgsConstructor
-    public static class GitInfo {
-
-        private String commit;
-        private String branch;
-    }
+    private String version;
+    private String buildDate;
+    private String buildBy;
+    private String company;
+    private String gitRevision;
 }

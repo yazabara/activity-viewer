@@ -5,11 +5,9 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-        classpath("gradle.plugin.com.github.ksoichiro:gradle-build-info-plugin:${buildInfoPluginVersion}")
     }
 }
 
@@ -18,32 +16,29 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'com.github.ksoichiro.build.info'
-
-buildInfo {
-    warnIfGitDirectoryIsMissing false
-}
 
 sourceCompatibility = 1.8
-
-//TODO doesn't work. need to fix it.
-jar {
-    manifest {
-        attributes(
-                'Built-By'       : System.properties['user.name'],
-                'Created-By'     : "Gradle ${gradle.gradleVersion}",
-                'Build-Jdk'      : "${System.properties['java.version']} (${System.properties['java.vendor']} ${System.properties['java.vm.version']})",
-                'Build-OS'       : "${System.properties['os.name']} ${System.properties['os.arch']} ${System.properties['os.version']}"
-        )
-    }
-}
 
 repositories {
     mavenCentral()
 }
 
+task prepareVersionInfo(type: Copy) {
+    from "$projectDir/src/main/resources/templates/"
+    include 'version-info.properties'
+    into "$projectDir/src/main/resources/"
+    expand([
+            company: project.group,
+            version: project.version,
+            date   : new Date(),
+            creator: System.properties['user.name'],
+            jdk    : "${System.properties['java.version']} (${System.properties['java.vendor']} ${System.properties['java.vm.version']})",
+            os     : "${System.properties['os.name']} ${System.properties['os.arch']} ${System.properties['os.version']}",
+            git    : "git rev-parse --short HEAD".execute().text.trim()
+    ])
+}
+
 dependencies {
-//    compile('org.springframework.boot:spring-boot-starter-data-jpa')
 //    compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compile('org.springframework.boot:spring-boot-starter-web')
@@ -55,3 +50,5 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
 //    testCompile('org.springframework.security:spring-security-test')
 }
+
+processResources.dependsOn(":backend:prepareVersionInfo")
