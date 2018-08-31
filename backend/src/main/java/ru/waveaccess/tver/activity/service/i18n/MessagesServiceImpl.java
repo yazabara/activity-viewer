@@ -1,9 +1,8 @@
-package ru.waveaccess.tver.activity.service.impl;
+package ru.waveaccess.tver.activity.service.i18n;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.stereotype.Service;
-import ru.waveaccess.tver.activity.service.MessagesService;
 
 @Service
 @AllArgsConstructor

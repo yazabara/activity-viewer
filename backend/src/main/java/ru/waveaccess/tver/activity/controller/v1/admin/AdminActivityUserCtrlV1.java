@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.waveaccess.tver.activity.model.db.users.ActivityUser;
 import ru.waveaccess.tver.activity.service.ActivityUsersService;
-import ru.waveaccess.tver.activity.service.MessagesService;
+import ru.waveaccess.tver.activity.service.i18n.MessagesService;
 
 import java.util.List;
 

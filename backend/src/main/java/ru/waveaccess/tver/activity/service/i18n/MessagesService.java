@@ -1,4 +1,4 @@
-package ru.waveaccess.tver.activity.service;
+package ru.waveaccess.tver.activity.service.i18n;
 
 public interface MessagesService {
 
