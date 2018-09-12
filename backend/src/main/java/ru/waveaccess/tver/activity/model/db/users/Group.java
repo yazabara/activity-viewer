@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 
 @Entity
-@Table(name = "Groups")
+@Table(name = "Activity_groups")
 @Access(AccessType.FIELD)
 public class Group {
 

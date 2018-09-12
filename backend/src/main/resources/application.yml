@@ -9,18 +9,18 @@ spring:
     change-log: classpath:db/changelog/db.changelog.xml
     parameters:
       dbSchema: ${dbSchema}
+    enabled: true
   h2:
     console:
       enabled: true
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    database: h2
+    database-platform: org.hibernate.dialect.MySQL5Dialect
     properties:
       hibernate.default_schema: ${dbSchema}
       hibernate.enable_lazy_load_no_trans: true
     show-sql: true
   datasource:
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-    url: jdbc:h2:mem:activity_database;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS ${dbSchema};
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/${dbSchema}?useSSL=false&allowMultiQueries=true

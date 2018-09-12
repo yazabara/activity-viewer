@@ -3,5 +3,611 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
+ <changeSet id="310818" author="NTitov">
+   <sql>
+     DROP TABLE IF EXISTS `activity_groups`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `activity_groups` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `name` varchar(255) DEFAULT NULL,
+     `title` varchar(255) DEFAULT NULL,
+     `owner_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FK234qtlvwcb0u8otn9kk42cxff` (`owner_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `activity_groups` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `albums`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `albums` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `folder_name` varchar(255) DEFAULT NULL,
+     `file_name` varchar(255) DEFAULT NULL,
+     `event_id` bigint(20) DEFAULT NULL,
+     `owner_id` bigint(20) DEFAULT NULL,
+     `album_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKjke9kmnv7aw8rwh7037int3tu` (`event_id`),
+     KEY `FKknpy33usso25ouv27dah5geix` (`owner_id`),
+     KEY `FK4j82tnst5qmthiki896d4p14x` (`album_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
 
+     --
+     -- Dumping data for table `albums`
+     --
+
+     LOCK TABLES `albums` WRITE;
+     /*!40000 ALTER TABLE `albums` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `albums` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `chat_messages`
+     --
+
+     DROP TABLE IF EXISTS `chat_messages`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `chat_messages` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `timestamp` datetime DEFAULT NULL,
+     `chat_id` bigint(20) DEFAULT NULL,
+     `user_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKt56nsqjwt7t4sian6vts9wg3t` (`chat_id`),
+     KEY `FK6f0y4l43ihmgfswkgy9yrtjkh` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `chat_messages`
+     --
+
+     LOCK TABLES `chat_messages` WRITE;
+     /*!40000 ALTER TABLE `chat_messages` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `chat_messages` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `chats`
+     --
+
+     DROP TABLE IF EXISTS `chats`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `chats` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `event_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKeop5bdbqhehvh7fjxfnhualil` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `chats`
+     --
+
+     LOCK TABLES `chats` WRITE;
+     /*!40000 ALTER TABLE `chats` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `chats` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `conditions`
+     --
+
+     DROP TABLE IF EXISTS `conditions`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `conditions` (
+     `condition_type` varchar(31) NOT NULL,
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `is_met` bit(1) DEFAULT NULL,
+     `event_id` bigint(20) DEFAULT NULL,
+     `parent_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKcab1drkv36e61kud70ufy6byh` (`event_id`),
+     KEY `FKcomrt3akercbuhhisc6o9j4lq` (`parent_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `conditions`
+     --
+
+     LOCK TABLES `conditions` WRITE;
+     /*!40000 ALTER TABLE `conditions` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `conditions` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `cost_groups`
+     --
+
+     DROP TABLE IF EXISTS `cost_groups`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `cost_groups` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `description` varchar(255) DEFAULT NULL,
+     `сonstituent_cost_amount` double DEFAULT NULL,
+     `event_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKlokku51b31tpbmgmlg9f42hiq` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `cost_groups`
+     --
+
+     LOCK TABLES `cost_groups` WRITE;
+     /*!40000 ALTER TABLE `cost_groups` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `cost_groups` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `databasechangelog`
+     --
+
+     DROP TABLE IF EXISTS `databasechangelog`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `databasechangelog` (
+     `ID` varchar(255) NOT NULL,
+     `AUTHOR` varchar(255) NOT NULL,
+     `FILENAME` varchar(255) NOT NULL,
+     `DATEEXECUTED` datetime NOT NULL,
+     `ORDEREXECUTED` int(11) NOT NULL,
+     `EXECTYPE` varchar(10) NOT NULL,
+     `MD5SUM` varchar(35) DEFAULT NULL,
+     `DESCRIPTION` varchar(255) DEFAULT NULL,
+     `COMMENTS` varchar(255) DEFAULT NULL,
+     `TAG` varchar(255) DEFAULT NULL,
+     `LIQUIBASE` varchar(20) DEFAULT NULL,
+     `CONTEXTS` varchar(255) DEFAULT NULL,
+     `LABELS` varchar(255) DEFAULT NULL,
+     `DEPLOYMENT_ID` varchar(10) DEFAULT NULL
+     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `databasechangelog`
+     --
+
+     LOCK TABLES `databasechangelog` WRITE;
+     /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `databasechangeloglock`
+     --
+
+     DROP TABLE IF EXISTS `databasechangeloglock`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `databasechangeloglock` (
+     `ID` int(11) NOT NULL,
+     `LOCKED` bit(1) NOT NULL,
+     `LOCKGRANTED` datetime DEFAULT NULL,
+     `LOCKEDBY` varchar(255) DEFAULT NULL,
+     PRIMARY KEY (`ID`)
+     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `databasechangeloglock`
+     --
+
+     LOCK TABLES `databasechangeloglock` WRITE;
+     /*!40000 ALTER TABLE `databasechangeloglock` DISABLE KEYS */;
+     INSERT INTO `databasechangeloglock` VALUES (1,_binary '\0',NULL,NULL);
+     /*!40000 ALTER TABLE `databasechangeloglock` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `debts`
+     --
+
+     DROP TABLE IF EXISTS `debts`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `debts` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `debt` double DEFAULT NULL,
+     `event_id` bigint(20) DEFAULT NULL,
+     `user_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKkuvqhf9jy6w3kinlqqyyo65gt` (`event_id`),
+     KEY `FKk1eltr5nsx9l0yc4lpuh4ih6m` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `debts`
+     --
+
+     LOCK TABLES `debts` WRITE;
+     /*!40000 ALTER TABLE `debts` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `debts` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `events`
+     --
+
+     DROP TABLE IF EXISTS `events`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `events` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `equipment_description` varchar(255) DEFAULT NULL,
+     `external_link` varchar(255) DEFAULT NULL,
+     `html_description` varchar(255) DEFAULT NULL,
+     `is_date_approximate` bit(1) DEFAULT NULL,
+     `location` varchar(255) DEFAULT NULL,
+     `meeting_place` varchar(255) DEFAULT NULL,
+     `is_private` bit(1) DEFAULT NULL,
+     `root_external_link` varchar(255) DEFAULT NULL,
+     `title` varchar(255) DEFAULT NULL,
+     `total_cost_amount` double DEFAULT NULL,
+     `author_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FK7gaujeodsxymr1fs9h0uy4wtq` (`author_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `events`
+     --
+
+     LOCK TABLES `events` WRITE;
+     /*!40000 ALTER TABLE `events` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `events` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `events_final_participants`
+     --
+
+     DROP TABLE IF EXISTS `events_final_participants`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `events_final_participants` (
+     `event_id` bigint(20) NOT NULL,
+     `user_id` bigint(20) NOT NULL,
+     KEY `FK5ek3hutu59lf7mldm54vido90` (`user_id`),
+     KEY `FKjki8do2vbijbsj3muao5vjq24` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `events_final_participants`
+     --
+
+     LOCK TABLES `events_final_participants` WRITE;
+     /*!40000 ALTER TABLE `events_final_participants` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `events_final_participants` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `events_interests`
+     --
+
+     DROP TABLE IF EXISTS `events_interests`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `events_interests` (
+     `event_id` bigint(20) NOT NULL,
+     `interest_id` bigint(20) NOT NULL,
+     KEY `FKp0gmcply4s2lfys20vhygreif` (`interest_id`),
+     KEY `FKbdl2n3fuq2lwxlv320vfmqg3h` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `events_interests`
+     --
+
+     LOCK TABLES `events_interests` WRITE;
+     /*!40000 ALTER TABLE `events_interests` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `events_interests` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `events_non_final_participants`
+     --
+
+     DROP TABLE IF EXISTS `events_non_final_participants`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `events_non_final_participants` (
+     `event_id` bigint(20) NOT NULL,
+     `user_id` bigint(20) NOT NULL,
+     KEY `FKnx008umlw74qmhakhv8mqta79` (`user_id`),
+     KEY `FK42ed46nreb1kqmkx7p1118clj` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `events_non_final_participants`
+     --
+
+     LOCK TABLES `events_non_final_participants` WRITE;
+     /*!40000 ALTER TABLE `events_non_final_participants` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `events_non_final_participants` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `events_tags`
+     --
+
+     DROP TABLE IF EXISTS `events_tags`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `events_tags` (
+     `event_id` bigint(20) NOT NULL,
+     `tag_id` bigint(20) NOT NULL,
+     KEY `FKpoi6i8t0fcnq9rq2fh9ff7304` (`tag_id`),
+     KEY `FKj7jbpla32u3hg2ewa614jbvd0` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `events_tags`
+     --
+
+     LOCK TABLES `events_tags` WRITE;
+     /*!40000 ALTER TABLE `events_tags` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `events_tags` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `gaps`
+     --
+
+     DROP TABLE IF EXISTS `gaps`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `gaps` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `gap_date` date DEFAULT NULL,
+     `time_model_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKoa7lxysm1382ejmyci136dfvu` (`time_model_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     /*!40101 SET character_set_client = @saved_cs_client */;
+
+     --
+     -- Dumping data for table `gaps`
+     --
+
+     LOCK TABLES `gaps` WRITE;
+     /*!40000 ALTER TABLE `gaps` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `gaps` ENABLE KEYS */;
+     UNLOCK TABLES;
+
+     --
+     -- Table structure for table `interests`
+     --
+
+     DROP TABLE IF EXISTS `interests`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `interests` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `description` varchar(255) DEFAULT NULL,
+     PRIMARY KEY (`id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `interests` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `invite_policy`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `invite_policy` (
+     `invite_policy` varchar(31) NOT NULL,
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `event_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKt4dmqo97qtashv0rfa2hvb2lg` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `invite_policy` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `options`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `options` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `text` varchar(255) DEFAULT NULL,
+     `voting_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKayau1f2bq8wupf4sl147bu0gb` (`voting_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `options` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `paid_user_quote`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `paid_user_quote` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `assigned_quote_absolute` double DEFAULT NULL,
+     `assigned_quote_percent` double DEFAULT NULL,
+     `pricing_model_id` bigint(20) DEFAULT NULL,
+     `user_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FK610plp3apevvr8rkxjb7xxr4` (`pricing_model_id`),
+     KEY `FKgteikc1x1qtgh62uehh443y7o` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `paid_user_quote` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `personal_invitations`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `personal_invitations` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `invite_policy_id` bigint(20) DEFAULT NULL,
+     `user_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKfac3r45pyu8k7odeo935hn1us` (`invite_policy_id`),
+     KEY `FK4mp5p515day6o13124yrhhl8l` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `personal_invitations` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `photo_comments`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `photo_comments` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `text` varchar(255) DEFAULT NULL,
+     `author_id` bigint(20) DEFAULT NULL,
+     `photo_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FK954k1yc9v0n56iu0gbmt74rxw` (`author_id`),
+     KEY `FK2f118744q4tbaj6315jy7p1ma` (`photo_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `photo_comments` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `photo_rates`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `photo_rates` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `value` bigint(20) DEFAULT NULL,
+     `photo_id` bigint(20) DEFAULT NULL,
+     `user_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKaf7snlbh2ad0qwxakysyadt0a` (`photo_id`),
+     KEY `FKb31p8ajj3t4ln5oix42gr2fy0` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `photo_rates` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `pricing`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `pricing` (
+     `pricing_model_type` varchar(31) NOT NULL,
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `event_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKb7blm9or3asv0xh4p7cqjfhn4` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `pricing` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `responsibilities`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `responsibilities` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `responsibility` varchar(255) DEFAULT NULL,
+     `event_id` bigint(20) DEFAULT NULL,
+     `user_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKp2spbyojwanj2eynfh41f4m2s` (`event_id`),
+     KEY `FKpxin24cee2nth1ro5jcrwmg09` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `responsibilities` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `subscriptions`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `subscriptions` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `interest_id` bigint(20) DEFAULT NULL,
+     `tag_id` bigint(20) DEFAULT NULL,
+     `user_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FK4pvf2prugu6d6govem8ovhyjh` (`interest_id`),
+     KEY `FKbad2t4jybbaofi4q11eqli8la` (`tag_id`),
+     KEY `FKhro52ohfqfbay9774bev0qinr` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `subscriptions` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `tags`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `tags` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `tag` varchar(255) DEFAULT NULL,
+     PRIMARY KEY (`id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `tags` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `timing`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `timing` (
+     `time_model_type` varchar(31) NOT NULL,
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `event_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKgakffm9j6ol9sbysvt3kq681u` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `timing` WRITE;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `users`;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `users` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `avatar_path` varchar(255) DEFAULT NULL,
+     `birth_date` date DEFAULT NULL,
+     `email` varchar(255) DEFAULT NULL,
+     `name` varchar(255) DEFAULT NULL,
+     `position` varchar(255) DEFAULT NULL,
+     `skype` varchar(255) DEFAULT NULL,
+     `surname` varchar(255) DEFAULT NULL,
+     PRIMARY KEY (`id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `users` WRITE;
+     /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `users` ENABLE KEYS */;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `users_groups`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `users_groups` (
+     `group_id` bigint(20) NOT NULL,
+     `user_id` bigint(20) NOT NULL,
+     KEY `FKg6fu0mfuj9eqfd9aro1nc40nn` (`user_id`),
+     KEY `FK495ahiprrdnm42ukbh52a9ogq` (`group_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `users_groups` WRITE;
+     /*!40000 ALTER TABLE `users_groups` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `users_groups` ENABLE KEYS */;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `users_interests`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `users_interests` (
+     `user_id` bigint(20) NOT NULL,
+     `interest_id` bigint(20) NOT NULL,
+     KEY `FKap6m4adfew3snmb5fwayxd1pu` (`interest_id`),
+     KEY `FKcfbenfemx5v0f8pj7nl1ysvem` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `users_interests` WRITE;
+     /*!40000 ALTER TABLE `users_interests` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `users_interests` ENABLE KEYS */;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `voting_choises`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `voting_choises` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `timestamp` datetime DEFAULT NULL,
+     `option_id` bigint(20) DEFAULT NULL,
+     `user_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FKrgad9l2q7u9vv6ugsngr28fit` (`option_id`),
+     KEY `FKq3hmxc5w8q4hg47942mi8b8wk` (`user_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `voting_choises` WRITE;
+     /*!40000 ALTER TABLE `voting_choises` DISABLE KEYS */;
+     /*!40000 ALTER TABLE `voting_choises` ENABLE KEYS */;
+     UNLOCK TABLES;
+     DROP TABLE IF EXISTS `votings`;
+     /*!40101 SET @saved_cs_client     = @@character_set_client */;
+     SET character_set_client = utf8mb4 ;
+     CREATE TABLE `votings` (
+     `id` bigint(20) NOT NULL AUTO_INCREMENT,
+     `title` varchar(255) DEFAULT NULL,
+     `event_id` bigint(20) DEFAULT NULL,
+     PRIMARY KEY (`id`),
+     KEY `FK9yuf924udh1cqj9j4itv9io3h` (`event_id`)
+     ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+     LOCK TABLES `votings` WRITE;
+     UNLOCK TABLES;
+   </sql>
+ </changeSet>
 </databaseChangeLog>
